@@ -1,0 +1,22 @@
+@url=http://localhost:3000/
+###
+get {{url}}list
+
+###
+post {{url}}list
+Content-Type: application/json
+
+{
+  "name":"test5"
+}
+
+###
+put {{url}}list/5e1d297c8f63a14870111e73
+Content-Type: application/json
+
+{
+  "name":"test6"
+}
+
+###
+DELETE {{url}}list/5e1d297c8f63a14870111e73
